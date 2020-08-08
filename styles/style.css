@@ -1,0 +1,29 @@
+html {
+    color: #564256;
+    background-color: #bfbfbf;
+}
+/* div { */
+/*     border: 1px solid #04724d; */
+/* } */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fc814a;
+    box-sizing: border-box;
+}
+.response-buttons {
+    display: flex;
+    justify-content: center;
+}
+.sidebar {
+    background-color: #e8e8e8
+}
+.log {
+    background-color: #e8e8e8
+}

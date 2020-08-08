@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Iain Ireland">
+    <title>Signal Detection Demo</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-section">
+	<p>main</p>
+	<canvas id="canvas">Canvas alt-text</canvas>
+	<div class="response-buttons">
+	  <input type="button" value="✓">
+	  <input type="button" value="❌">
+	</div>
+      </div>
+      <div>
+	<div class="sidebar">
+	  <label for="duration">Duration (ms)</label>
+	  <input type="range" id="duration" name="duration"
+		 min="50" max="500" value = "50" step="50">
+	  </br>
+	  <label for="size">Size</label>
+	  <input type="range" id="size" name="size"
+		 min="1" max="100" value = "50" step="1">
+	</div>
+        <div class="control-buttons">
+	  <input type="button" value="Start">
+	  <input type="button" value="Test">
+	</div>
+	<div class="log">
+
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
