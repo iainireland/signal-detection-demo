@@ -256,7 +256,7 @@ function registerResponse(response) {
     setEnabled(".response-buttons > .custom-button", false);
     currentTrial.setResult(response);
     if (currentTrial.done()) {
-	console.log(currentTrial);
+	currentTrial.printResults();
 	endTrial();
     } else {
 	window.setTimeout(fixationCross, 500);
@@ -271,7 +271,6 @@ function endTrial() {
     setEnabled("#cancel", false);
     setEnabled(".sidebar > input", true);
     setEnabled(".response-buttons > .custom-button", false);
-    currentTrial.printResults();
     currentTrial = undefined;
 }
 
